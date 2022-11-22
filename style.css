@@ -1,0 +1,93 @@
+*,*::after,*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(255, 0, 0);
+    border: 20px solid brown;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.container{
+    max-width: 1000px;
+    margin:0 auto
+}
+.is2a{
+    border: 20px solid brown;
+    width: 120px;
+    color: blue;
+    font-weight: 900;
+    line-height: 205px;
+    padding-top: 10px;
+    margin-left: 14px;
+}
+.is3a{
+    list-style: none;
+    margin-right: 30px;
+}
+.is3a a{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 14px;
+transition:all 2s;
+}
+.is3a a:hover{
+    color: black;
+
+}
+.apple{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.is4a{
+    display: flex;
+
+}
+.is3a:last-child{
+    margin-right: 0px; 
+}
+.lizo{
+    display: flex;
+    justify-content: space-between;
+}
+.rot img{
+    width: 200px;
+}
+.rot h2{
+    color: chocolate;
+}
+.rot p{
+    font-size: xx-large;
+}
+.glaza img{
+    width: 300px;
+}
+.tulov{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 150px 0;
+}
+
+
+
+/*
+    media
+*/
+@media screen and (max-width: 720px) {
+    .is2a {
+        color: rgb(184, 218, 36);
+    }
+}
+@media screen and (max-width: 510px) {
+   .lizo{
+        flex-direction: column;
+   }
+}
+@media screen and (max-width: 260px) {
+    .is2a {
+        color: rgb(215, 255, 192);
+    }
+}
+
